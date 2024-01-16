@@ -19,8 +19,18 @@ export const Config: z<Config> = z.object({})
 export async function apply(ctx: Context, config: Config) {
   const notifier = ctx.notifier.create()
 
-  for (let i = 5; i > 0; i--) {
-    notifier.update(`插件将在 ${i} 秒后关闭……`)
+  let i = 6
+  const notify = () => notifier.update(<>
+    <p>插件将在 {i} 秒后关闭……</p>
+    <p><button onclick={increment}>续一秒</button></p>
+  </>)
+  const increment = () => {
+    i++
+    notify()
+  }
+
+  while (--i > 0) {
+    notify()
     try {
       await ctx.sleep(1000)
     } catch {
