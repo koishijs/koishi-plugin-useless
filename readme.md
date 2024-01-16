@@ -2,6 +2,9 @@
 
 [![npm](https://img.shields.io/npm/v/koishi-plugin-useless?style=flat-square)](https://www.npmjs.com/package/koishi-plugin-useless)
 
+This is a useless plugin for Koishi. It will automatically disable itself after enabled.
+
+这是一个没用的插件。启用该插件后，插件会自动关闭自己。
 
 ## 许可证
 
