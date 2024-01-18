@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-useless",
   "description": "A useless plugin for Koishi",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -39,7 +39,7 @@
     "koishi": "^4.16.4"
   },
   "devDependencies": {
-    "@koishijs/plugin-notifier": "^1.1.0",
+    "@koishijs/plugin-notifier": "^1.1.2",
     "@types/node": "^20.10.2",
     "esbuild": "^0.18.20",
     "esbuild-register": "^3.5.0",

@@ -22,8 +22,9 @@ export async function apply(ctx: Context, config: Config) {
   let i = 6
   const notify = () => notifier.update(<>
     <p>插件将在 {i} 秒后关闭……</p>
-    <p><button onclick={increment}>续一秒</button></p>
+    <p><button onClick={increment}>续一秒</button></p>
   </>)
+
   const increment = () => {
     i++
     notify()
